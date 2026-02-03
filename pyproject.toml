@@ -8,6 +8,19 @@ version = "0.1.0"
 description = "Caesar Cipher encryption/decryption CLI"
 readme = "README.md"
 requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["caesar-cipher", "cipher", "cli", "cryptography", "python"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Environment :: Console",
+  "Topic :: Security :: Cryptography",
+]
+
+[project.urls]
+Homepage = "https://github.com/osmankaankars/caesar-cipher-tool"
+Repository = "https://github.com/osmankaankars/caesar-cipher-tool"
 
 [project.scripts]
 caesar = "caesar:cli"

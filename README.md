@@ -2,6 +2,10 @@
 
 Basit bir Caesar Cipher CLI araci. Metni belirtilen kaydirma degeriyle sifreler veya cozer.
 
+## Surum
+
+Mevcut surum: `0.1.0`
+
 ## Kurulum
 
 Python 3 yeterlidir. Dosyayi calistirilabilir yapmak icin:
@@ -55,3 +59,7 @@ Dosyadan okuyup dosyaya yazma:
 - Buyuk/kucuk harf korunur.
 - Harf olmayan karakterler aynen birakilir.
 - Shift degeri mod 26 ile normalize edilir.
+
+## Lisans
+
+MIT
