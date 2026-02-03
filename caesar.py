@@ -7,11 +7,9 @@ Examples:
   echo "Attack at dawn" | ./caesar.py decrypt -s 5
 """
 
-from __future__ import annotations
-
 import argparse
 import sys
-from typing import Iterable
+from typing import Iterable, Optional
 
 
 def _shift_char(ch: str, shift: int) -> str:
@@ -28,7 +26,7 @@ def caesar(text: str, shift: int) -> str:
     return "".join(_shift_char(ch, shift) for ch in text)
 
 
-def _read_input(text_arg: str | None, file_path: str | None) -> str:
+def _read_input(text_arg: Optional[str], file_path: Optional[str]) -> str:
     if text_arg is not None and file_path is not None:
         raise ValueError("Provide either text or --file, not both.")
     if file_path:
